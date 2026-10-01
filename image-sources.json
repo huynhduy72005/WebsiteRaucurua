@@ -1,0 +1,42 @@
+[
+  {
+    "name": "tomato",
+    "image": "https://images.unsplash.com/photo-1587411768515-eeac0647deed?auto=format&fit=crop&w=900&q=85",
+    "bytes": 61995
+  },
+  {
+    "name": "broccoli",
+    "image": "https://images.unsplash.com/photo-1615485021022-dec8994adeba?auto=format&fit=crop&w=900&q=85",
+    "bytes": 73040
+  },
+  {
+    "name": "carrot",
+    "image": "https://images.unsplash.com/photo-1572527129705-a6c197003d61?auto=format&fit=crop&w=900&q=85",
+    "bytes": 279534
+  },
+  {
+    "name": "apple",
+    "image": "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&w=900&q=85",
+    "bytes": 33959
+  },
+  {
+    "name": "orange",
+    "image": "https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=900&q=85",
+    "bytes": 43970
+  },
+  {
+    "name": "banana",
+    "image": "https://images.unsplash.com/photo-1587132137056-bfbf0166836e?auto=format&fit=crop&w=900&q=85",
+    "bytes": 33465
+  },
+  {
+    "name": "cucumber",
+    "image": "https://images.unsplash.com/photo-1583118208563-1654aa5caa31?auto=format&fit=crop&w=900&q=85",
+    "bytes": 58918
+  },
+  {
+    "name": "potato",
+    "image": "https://images.unsplash.com/photo-1590165482129-1b8b27698780?auto=format&fit=crop&w=900&q=85",
+    "bytes": 310660
+  }
+]

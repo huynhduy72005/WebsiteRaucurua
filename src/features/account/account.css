@@ -1,0 +1,210 @@
+/* Bố cục riêng của trang tài khoản. */
+.account-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.account-sidebar {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.account-identity {
+  padding: 25px 18px;
+  text-align: center;
+  background: #f5f8ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.account-identity .avatar {
+  width: 62px;
+  height: 62px;
+  font-size: 25px;
+  background: #e0ebd8;
+}
+.account-identity strong {
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.account-identity > small {
+  font-size: 11px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.account-identity .role-badge {
+  font-size: 11px;
+  padding: 4px 10px;
+}
+.account-sidebar nav {
+  padding: 14px 10px;
+}
+.account-sidebar nav > a,
+.account-sidebar nav > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 13px;
+  color: #63725e;
+}
+.account-sidebar nav > button.active,
+.account-sidebar nav > a:hover,
+.account-sidebar nav > button:hover {
+  color: var(--green);
+  background: #edf4e8;
+}
+.account-sidebar nav .account-admin-link {
+  border-block: 1px solid var(--line);
+  border-radius: 0;
+  margin-block: 10px;
+  padding-block: 15px;
+  color: var(--green);
+}
+.account-content {
+  min-width: 0;
+}
+.account-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 24px;
+}
+.account-summary article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: white;
+}
+.account-summary svg {
+  color: var(--green);
+}
+.account-summary strong {
+  font-size: 25px;
+}
+.account-summary span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.profile-form,
+.password-form {
+  border-radius: 15px;
+  padding: 28px;
+}
+.profile-form h2,
+.password-form h2 {
+  margin: 12px 0;
+}
+.profile-form small {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.profile-form input[readonly] {
+  color: #778174;
+  background: #f6f8f3;
+}
+.password-form {
+  max-width: 620px;
+}
+.account-member-since {
+  color: var(--muted);
+  font-size: 12px;
+}
+.support-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 23px;
+  margin-bottom: 15px;
+  background: white;
+}
+.support-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.support-card > small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 7px;
+}
+.support-card > p {
+  margin-top: 15px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.support-card blockquote {
+  margin: 18px 0 0;
+  padding: 16px;
+  background: #f2f7ed;
+  border-left: 3px solid #a8c29b;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.support-card blockquote p {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .account-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .account-summary article {
+    padding: 16px 12px;
+  }
+}
+@media (max-width: 700px) {
+  .account-layout {
+    grid-template-columns: 1fr;
+  }
+  .account-sidebar nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+  .account-identity {
+    padding: 20px;
+  }
+  .account-sidebar nav .account-admin-link {
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 10px;
+  }
+  .profile-form,
+  .password-form {
+    padding: 22px;
+  }
+}
+@media (max-width: 420px) {
+  .account-summary {
+    gap: 8px;
+  }
+  .account-summary article {
+    padding: 14px 10px;
+  }
+  .account-summary span {
+    font-size: 10px;
+  }
+  .account-sidebar nav > a,
+  .account-sidebar nav > button {
+    font-size: 12px;
+    gap: 7px;
+  }
+}
