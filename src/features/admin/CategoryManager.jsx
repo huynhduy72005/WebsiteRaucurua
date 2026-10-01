@@ -32,7 +32,7 @@ export default function CategoryManager() {
       });
       await loadProducts();
       setForm(null);
-      showToast("Đã lưu danh mục. Menu và bộ lọc đã cập nhật.");
+      showToast("Đã lưu danh mục. Menu và bộ lọc đã cập nhật");
     } catch (e) {
       setError(e.message);
     } finally {
